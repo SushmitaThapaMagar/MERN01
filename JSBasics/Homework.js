@@ -77,7 +77,7 @@
 //REPEAT
 
 let hours = 12, min = 5, sec = 10;
-    const pad = (n) =>`${String(n).padStart(2,'0')}`
+const pad = (n) =>`${String(n).padStart(2,'0')}`
 const formatTime = (h, m, s)=>{
 
 
