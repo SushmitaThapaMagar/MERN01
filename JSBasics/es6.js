@@ -94,7 +94,7 @@
 //map,filter,reduce
 
 const numbers = [1, 2, 3, 4, 5]; // Define the array
-const result = numbers.reduce((acc,value)=>{
+const result = numbers.reduce((acc,value)=>{ //method used on an array (numbers). Its purpose is to accumulate values from the array into a single result.
 
     return acc + value;
 
@@ -120,21 +120,21 @@ console.log(result1)
 //continue, break
 
 //Continue Example 
-for(let i = 16; i>=0;i--){
-    if(i%2 !==0){
-        continue
-    }
-    console.log("Even:",i)
-}
+// for(let i = 16; i>=0;i--){
+//     if(i%2 !==0){
+//         continue
+//     }
+//     console.log("Even:",i)
+// }
 
 
-//Break Example : completely break loop
-for(let i = 16; i>=0;i--){
-    if(i%2 !==0){
-        break
-    }
-    console.log(i)
-}
+// //Break Example : completely break loop
+// for(let i = 16; i>=0;i--){
+//     if(i%2 !==0){
+//         break
+//     }
+//     console.log(i)
+// }
 
 
 
