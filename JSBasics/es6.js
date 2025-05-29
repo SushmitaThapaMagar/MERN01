@@ -93,21 +93,21 @@
 //arr methods
 //map,filter,reduce
 
-const numbers = [1, 2, 3, 4, 5]; // Define the array
-const result = numbers.reduce((acc,value)=>{ //method used on an array (numbers). Its purpose is to accumulate values from the array into a single result.
+// const numbers = [1, 2, 3, 4, 5]; // Define the array
+// const result = numbers.reduce((acc,value)=>{ //method used on an array (numbers). Its purpose is to accumulate values from the array into a single result.
 
-    return acc + value;
+//     return acc + value;
 
-},[])
-console.log(result)
+// },[])
+// console.log(result)
 
-const numbers1 = [1, 2, 3, 4, 5]; // Define the array
-const result1 = numbers1.reduce((acc,value)=>{
+// const numbers1 = [1, 2, 3, 4, 5]; // Define the array
+// const result1 = numbers1.reduce((acc,value)=>{
 
-    return acc + value;
+//     return acc + value;
 
-},0)
-console.log(result1)
+// },0)
+// console.log(result1)
 
 
 
