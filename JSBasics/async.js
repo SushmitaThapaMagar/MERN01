@@ -148,62 +148,62 @@
 
 
 //3. async/await : that simplify working with Promises, making asynchronous code easier to read and write
-// const getUser =()=>{
-//     return new Promise((resolve,reject)=>{
-//         let isError = false
-//         setTimeout(()=>{
-//             if(!isError){
-//                 resolve("1. User Fetched")
-//             }else{
-//                 reject('Something went wrong')
-//             }
+const getUser =()=>{
+    return new Promise((resolve,reject)=>{
+        let isError = false
+        setTimeout(()=>{
+            if(!isError){
+                resolve("1. User Fetched")
+            }else{
+                reject('Something went wrong')
+            }
     
-//         },2000)
-//     })
-// }
+        },2000)
+    })
+}
 
 
-// const getPosts =()=>{
-//     return new Promise((resolve,reject)=>{
-//         let isError = true
-//         setTimeout(()=>{
-//             if(!isError){
-//                 resolve("2. Posts Fetched")
-//             }else{
-//                 reject('Something went wrong from getPost')
-//             }
-//         },2000)
-//     })
-// }
+const getPosts =()=>{
+    return new Promise((resolve,reject)=>{
+        let isError = true
+        setTimeout(()=>{
+            if(!isError){
+                resolve("2. Posts Fetched")
+            }else{
+                reject('Something went wrong from getPost')
+            }
+        },2000)
+    })
+}
 
-// const fetchUser = async()=>{
-// try {
-// const users = await getUser() 
-// const posts = await getPosts()
-// console.log('Fetch User',users)
-// console.log('Fetch User',posts)
+const fetchUser = async()=>{
+try {
+const users = await getUser() 
+const posts = await getPosts()
+console.log('Fetch User',users)
+console.log('Fetch User',posts)
     
-// } catch (error) {
-//     console.log(error)
+} catch (error) {
+    console.log(error)
     
-// }finally{
-//     console.log("Finally")
-// }
+}finally{
+    console.log("Finally")
+}
 
-// }
-// fetchUser()
+}
+fetchUser()
 
-// const getTodos= async() =>{
-//     const resp = await fetch('https://jsonplaceholder.typicode.com/todos')
+const getTodos= async() =>{
+    const resp = await fetch('https://jsonplaceholder.typicode.com/todos')
 
-//     if(!resp.ok){
+    if(!resp.ok){
 
-//     }
-//     const todos = await resp.json()
-//     console.log(todos)
-// }
+    }
+    const todos = await resp.json()
+    console.log(todos)
+}
 
-// getTodos()
+getTodos()
 
 
 
