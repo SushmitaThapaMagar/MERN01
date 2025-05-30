@@ -119,22 +119,22 @@
 
 //continue, break
 
-Continue Example 
-for(let i = 16; i>=0;i--){
-    if(i%2 !==0){
-        continue
-    }
-    console.log("Even:",i)
-}
+// Continue Example 
+// for(let i = 16; i>=0;i--){
+//     if(i%2 !==0){
+//         continue
+//     }
+//     console.log("Even:",i)
+// }
 
 
-//Break Example : completely break loop
-for(let i = 16; i>=0;i--){
-    if(i%2 !==0){
-        break
-    }
-    console.log(i)
-}
+// //Break Example : completely break loop
+// for(let i = 16; i>=0;i--){
+//     if(i%2 !==0){
+//         break
+//     }
+//     console.log(i)
+// }
 
 
 

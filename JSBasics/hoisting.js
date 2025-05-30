@@ -6,8 +6,6 @@
 //Let and Const: Variables declared with let and const are not hoisted in the same way and will throw an error if accessed before declaration.
 
 
-
-
 //memory creation phase : 
 // func .> code
 //greet .> code

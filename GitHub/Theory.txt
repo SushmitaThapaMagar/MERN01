@@ -62,5 +62,7 @@ git log : helps you to see the history
 
 git checkout -b test-1 : 
 
+git merge : to add two file
+
 
 
