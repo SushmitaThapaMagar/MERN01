@@ -1,0 +1,74 @@
+node js is the js built environment
+
+micro task : promise / async and await
+
+macro / Task queue (setTimeout, setInterval)
+
+synchronous : normal task like (mathemathical,console or normal task) that does not need async/await
+synchronous :process that runs sequentially, meaning each task must complete before the next one begins
+
+call stack (engine): in call stack, the nodejs should be pushed : one time one task
+
+
+Phases in Node js
+
+- micro task
+- timers(setTimeout)(setInterval)
+- pending callbacks(run pendings)
+- idle, prepare
+- poll (incoming: connections,data etc)
+- check(setImediate)
+- close callbacks(sockets) 
+sockets : connection method , duplex 
+socket.io : if one connection is added then it should be connected continually(like live chats) then it should use socket for continue connection
+
+npm : a package manager 
+
+Node js is module based node :
+
+1. inbuilt module : directly used by us / e.g. fs(file system), path, http, os....
+2. third party module : it can be used on our project but it is written by others (like bcryptjs, jsonwebtoken, url)
+3. custom module ; can be made by us to use in project 
+
+
+//microtask
+//timer, ()=>{}
+//micro/task
+//synchronous :process that runs sequentially, meaning each task must complete before the next one begins
+//call stack(engine)
+
+//if call stack is empty it checked microtask(if task is in it) and then push goes to macro task
+
+
+//In queue : micro and macro queue
+//event loop : asynchronous task is handled by event loop, checked call stack if it is fulled then execute next
+
+
+//module.exports ={add, sub} : doesnot give us overridding 
+//module.exports = add : it only returns the add
+
+
+V8 engine in Node.js is a powerful JavaScript engine developed by Google/ browser -- it is in js and C++
+Nodejs is runned in servers/laptop -- it host the backend --- nodejs does not supported the inbuilt modules (path, http, fs etc)
+
+//============= Path =================
+const path = require('path')
+
+let filePath = './abc/efg/file.txt'
+
+console.log(path.extname(filePath)) //extention of complete file path
+console.log(path.basename(filePath)) //name of file
+console.log(path.dirname(filePath)) //directory name like ./abc/efg/
+console.log(path.parse(filePath))//string representing the path you want to parse 
+
+console.log(path.join('/abdd/afa','aad/fae','bc') ) //join two path
+console.log(path.resolve('/bc/def')) //useful for converting relative paths to absolute paths
+
+
+const res = path.resolve('index.js')
+console.log(__dirname)
+
+
+
+
+
