@@ -71,4 +71,49 @@ console.log(__dirname)
 
 
 
+//RESTful API ======= 6/1/2025
+
+//A RESTful API is a way for different software applications to communicate with each other over the internet. 
+//It allows you to perform actions like getting, creating, updating, or deleting data using standard web methods
+//hypertext transcript protocol //RESTful API
+  //http : allows you to create HTTP servers and clients
+
+//1. In RESTful API we have : ---
+//get () : we request here
+//post() : used to send data to the server
+//put () : to update some part (which is already updated)
+//patch () : allows clients to send partial updates to a resource on the server
+// delete () : to delete user which is already created
+
+// === Client: fronend part like ui/ux and Server: backend part 
+//2 . Client Server arch 
+
+// 3. stateless : RESTful API should be stateless === why ? => when client requests, process and server responds 
+  //=>  means that the server does not keep/retain any information about the client's previous requests
+  // simple example : Authentication system ===> login = gmail & password 
+  // login => token :  a piece of data that is used for authentication and authorization purposes
+
+// 4. Cacheable 
+  // Cache memory : used to store data temporarily 
+
+// 5. Layering : CDN(Content Delivery Network): distributes content across multiple servers globally, allowing users to access data from the nearest server
+// Proxy server : Typically sits between the client and your Node.js application, managing incoming requests, 
+// Logging : Captures and records events occurring in your application
+// Security : Protects your application from various threats and vulnerabilities
+// Loadbalance :  a technique used to distribute network traffic across multiple servers to ensure no single server becomes overwhelmed, thereby improving the application's availability and responsiveness
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
