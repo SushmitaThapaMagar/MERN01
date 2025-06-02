@@ -142,38 +142,38 @@
 
 
 
-const http = require('http') 
-const server = http.createServer((req,res)=>{ 
-  console.log(req.headers)
+// const http = require('http') 
+// const server = http.createServer((req,res)=>{ 
+//   console.log(req.headers)
 
-    if(req.url ===  '/'){
-      res.writeHead(200,{
-        'content-type':'text/plain'
-      })
-      const resp = {
-        name : 'Get Method',
-        url : '/'
-      }
-      res.end(JSON.stringify(resp))
-      return
+//     if(req.url ===  '/'){
+//       res.writeHead(200,{
+//         'content-type':'text/plain'
+//       })
+//       const resp = {
+//         name : 'Get Method',
+//         url : '/'
+//       }
+//       res.end(JSON.stringify(resp))
+//       return
 
 
 
-      res.end('<h1>Welcome to Home Page</h1>') // how is it reading <h1> ?? => server give or accept automatically
-      return
-    }
-    if(req.url === '/about'){
+//       res.end('<h1>Welcome to Home Page</h1>') // how is it reading <h1> ?? => server give or accept automatically
+//       return
+//     }
+//     if(req.url === '/about'){
 
-    res.end('<h1>Welcome to About Page</h1>')
-    return
-    }
-    res.end("Not Found")
+//     res.end('<h1>Welcome to About Page</h1>')
+//     return
+//     }
+//     res.end("Not Found")
 
-})
+// })
 
-server.listen(8080,()=>{
-    console.log("Server is running at http://localhost:8080")
-})
+// server.listen(8080,()=>{
+//     console.log("Server is running at http://localhost:8080")
+// })
 
 
 
