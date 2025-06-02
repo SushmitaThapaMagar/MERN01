@@ -87,8 +87,8 @@
   //http : allows you to create HTTP servers and clients
 
 //1. In RESTful API we have : ---
-//get () : we request here
-//post() : used to send data to the server
+//get () : we get or  request here
+//post() : used to send or create data to the server
 //put () : to update some part (which is already updated)
 //patch () : allows clients to send partial updates to a resource on the server
 // delete () : to delete user which is already created
@@ -140,11 +140,26 @@
 
 
 
+
+
 const http = require('http') 
 const server = http.createServer((req,res)=>{ 
+  console.log(req.headers)
 
     if(req.url ===  '/'){
-      res.end('<h1>Welcome to Home Page</h1>')
+      res.writeHead(200,{
+        'content-type':'text/plain'
+      })
+      const resp = {
+        name : 'Get Method',
+        url : '/'
+      }
+      res.end(JSON.stringify(resp))
+      return
+
+
+
+      res.end('<h1>Welcome to Home Page</h1>') // how is it reading <h1> ?? => server give or accept automatically
       return
     }
     if(req.url === '/about'){
@@ -156,8 +171,8 @@ const server = http.createServer((req,res)=>{
 
 })
 
-server.listen(8000,()=>{
-    console.log("Server is running at http://localhost:8000")
+server.listen(8080,()=>{
+    console.log("Server is running at http://localhost:8080")
 })
 
 
